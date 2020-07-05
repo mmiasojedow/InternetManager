@@ -4,11 +4,10 @@ from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from secrets import mail_pswd
 
-email = 'message.from.raspberry.pi@gmail.com'
-password = mail_pswd
-send_to_email = 'michal@miasojedow.com'
+email = 'your.raspberry.pi@email.com'
+password = 'your.raspberry.pi.email.password'
+send_to_email = 'your@email.com'
 subject = 'Daily raport'
 message = 'Send from Raspberry Pi \n \n'
 date = datetime.datetime.now().strftime('%d.%m')

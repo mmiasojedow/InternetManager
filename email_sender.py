@@ -22,8 +22,8 @@ msg.attach(MIMEText(message, 'plain'))
 
 # Setup the attachment
 files = [
-    (f'./wifi_history/wifi_history_{date}.txt', 'wifi_history'),
-    (f'./speed_history/speed_history_{date}.txt', 'speed_history')
+    (f'./wifi_history/wifi_history_{date}.txt', 'wifi_history.txt'),
+    (f'./speed_history/speed_history_{date}.txt', 'speed_history.txt')
     ]
 
 for file in files:

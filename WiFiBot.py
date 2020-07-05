@@ -110,7 +110,7 @@ class WiFiBot:
                     log = self.driver.find_elements_by_xpath('//*[@id="pc-login-password"]')
                     if log:
                         save_to_history('LOGIN')
-                        sleep(10)  # time for some actions
+                        sleep(60)  # time for some actions
                         self.login()
                     else:
                         raise ValueError('Unknown NSE problem')

@@ -1,5 +1,4 @@
 import datetime
-from secrets import wifi_pswd
 from time import sleep
 
 from selenium import webdriver
@@ -38,7 +37,7 @@ class WiFiBot:
         self.wait_for_element('//*[@id="pc-login-password"]')
         log = self.driver.find_element_by_xpath('//*[@id="pc-login-password"]')
         log.click()
-        log.send_keys(wifi_pswd)
+        log.send_keys('your.wifi.password')
         log_btn = self.driver.find_element_by_xpath('//*[@id="pc-login-main"]/div[3]/div')
         log_btn.click()
 
